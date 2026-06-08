@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asccochi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+    <video autoplay loop muted id="bg-video">
+        <source src="bg.webm" type="video/mp4">
+    </video>
+
+    <div class="color-overlay"></div>
+    <div class="vignette-overlay"></div>
+
+    <div class="header-left">
+        <h1>Rayka</h1>
+        <div class="sub">Development</div>
+    </div>
+
+    <div class="loader-wrapper">
+        <div class="shit-ring"></div>
+        <svg class="progress-ring" width="160" height="160">
+            <circle class="progress-ring__bg" stroke="rgba(255,255,255,0.03)" stroke-width="8" fill="transparent" r="70"
+                cx="80" cy="80" />
+            <circle class="progress-ring__circle" stroke="#c5bd65" stroke-width="8" fill="transparent" r="70" cx="80"
+                cy="80" />
+        </svg>
+        <div class="percentage" id="progress-text">0%</div>
+    </div>
+
+    <div class="right-panel">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('information', this)">Info</button>
+            <button class="tab-btn" onclick="openTab('rules', this)">Rules</button>
+            <button class="tab-btn" onclick="openTab('teams', this)">Teams</button>
+        </div>
+
+        <div class="content-area">
+            <div id="information" class="tab-content active">
+                <h2>Server Info</h2>
+                <div class="info-card">
+                    <p class="welcome-text">Experience the most premium roleplay server.</p>
+                    <div class="info-items">
+                        <div class="info-item"><span class="label">Discord</span><span
+                                class="value">discord.gg/zVTmVx9Az9</span></div>
+                        <div class="info-item"><span class="label">Framework</span><span class="value">Eslami</span>
+                        </div>
+                        <div class="info-item"><span class="label">Economy</span><span class="value">Medium /
+                                Hard</span></div>
+                        <div class="info-item"><span class="label">Status</span><span class="value"
+                                style="color: #8cff00; text-shadow: 0 0 10px rgba(149, 255, 0, 0.5);">Online</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <span class="asccochi">Loadingscreen by Asccochi</span>
+                </div>
+            </div>
+
+            <div id="rules" class="tab-content">
+                <h2>Server Rules</h2>
+                <ul class="rules-list">
+                    <li>
+                        <div class="rule-num">1</div>
+                        <p>Respect all players and staff members.</p>
+                    </li>
+                    <li>
+                        <div class="rule-num">2</div>
+                        <p>No RDM or VDM allowed.</p>
+                    </li>
+                    <li>
+                        <div class="rule-num">3</div>
+                        <p>Value of Life (Fear RP) is mandatory.</p>
+                    </li>
+                    <li>
+                        <div class="rule-num">4</div>
+                        <p>Using cheats results in a permanent ban.</p>
+                    </li>
+                    <li>
+                        <div class="rule-num">5</div>
+                        <p>Keep OOC out of IC chat.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="teams" class="tab-content">
+                <h2>Staff Team</h2>
+                <div class="team-list">
+                    <div class="team-member">
+                        <div class="member-info"><span class="name">Abolfazl</span><span class="role">Asccochi</span>
+                        </div>
+                        <span class="rank founder">FOUNDER</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-info"><span class="name">Labubu</span><span class="role">Tijay</span>
+                        </div>
+                        <span class="rank developer">FOUNDER</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-info"><span class="name">Cristiano</span><span class="role">Ronaldo</span>
+                        </div>
+                        <span class="rank admin">FOUNDER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
